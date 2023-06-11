@@ -1,18 +1,14 @@
 import { useState } from 'react'
 import styled from 'styled-components'
 import { ethers } from 'ethers'
-import { create as ipfsHttpClient } from 'ipfs-http-client'
+
 import { useRouter } from 'next/router'
 import Button from '../src/components/styled/Button';
 import { Colors } from '../src/components/Theme';
 import { Web3Modal, Web3Button } from '@web3modal/react'
 import { useAccount} from 'wagmi'
+import Image from 'next/image';
 
-
-
-const client = ipfsHttpClient('https://ipfs.infura.io:5001/api/v0')
-
-import {reactosNFTAddress} from '../config'
 
 const FormEl = styled.form`
     width: 100%;
@@ -41,50 +37,10 @@ export default function CreateItem() {
       console.log('Error uploading file: ', error)
     }  
   }
-  async function uploadToIPFS() {
-    const { name, description, price } = formInput
-    if (!name || !description || !price || !fileUrl) return
-    /* first, upload to IPFS */
-    const data = JSON.stringify({
-      name, description, image: fileUrl
-    })
-    try {
-      const added = await client.add(data)
-      const url = `https://ipfs.infura.io/ipfs/${added.path}`
-      /* after file is uploaded to IPFS, return the URL to use it in the transaction */
-      return url
-    } catch (error) {
-      console.log('Error uploading file: ', error)
-    }  
-  }
 
   async function listNFTForSale() {
-    const url = await uploadToIPFS()
-    const web3Modal = new Web3Modal()
-    const connection = await web3Modal.connect()
-    const provider = new ethers.providers.Web3Provider(connection)
-    const signer = provider.getSigner()
-    console.log("sdsdsdsd", signer)
-
-    /* next, create the item */
-    const price = ethers.utils.parseUnits(formInput.price, 'ether')
-    let contract = new ethers.Contract(reactosNFTAddress, ReactosNFTMarketplace.abi, signer)
-    let listingPrice = await contract.getListingPrice()
-    listingPrice = listingPrice.toString()
-    let transaction = await contract.safeMint(url, price, { value: listingPrice })
-    await transaction.wait()
-   
     router.push('/reactos-marketplace')
   }
-
-  // if (!isConnected) {
-  //   return (
-  //     <div>
-  //       <Web3Button />
-        
-  //     </div>
-  //   )
-  // }
 
   return (
     <FormEl className="flex justify-center ">
@@ -116,7 +72,7 @@ export default function CreateItem() {
         />
         {
           fileUrl && (
-            <img className="rounded mt-4" width="350" src={fileUrl} />
+            <Image className="rounded mt-4" width="350" src={fileUrl} />
           )
         }
         {

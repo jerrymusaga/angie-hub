@@ -8,6 +8,7 @@ import Button from "../styled/Button";
 import SearchBar from "./SearchBar";
 import MobileSearchBar from "./MobileSearchBar";
 import Link from "next/link";
+import { Web3Button } from '@web3modal/react'
 
 
 const HeaderEl = styled.article`
@@ -133,7 +134,9 @@ const Header = ({mobileMenu}) => {
                                 </Link>
                             </NavItem>
                         </li>
-                        
+                        <li>
+                            <Web3Button />
+                        </li>
                         
                     </ul>
                 </Nav>
@@ -147,7 +150,7 @@ const Header = ({mobileMenu}) => {
             <UploadBtn>
                 <Button>
                     <Link href='/upload_nft'>
-                        Upload NFT
+                        Create NFT
                     </Link>
                 </Button>
             </UploadBtn>
