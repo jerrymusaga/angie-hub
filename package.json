@@ -1,0 +1,36 @@
+{
+  "name": "reactos-client",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@rainbow-me/rainbowkit": "^1.0.0",
+    "@web3modal/ethereum": "^2.4.1",
+    "@web3modal/react": "^2.4.1",
+    "axios": "^1.4.0",
+    "babel-preset-next": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "ethers": "^5.7.2",
+    "ipfs-http-client": "^56.0.1",
+    "next": "12.0.9",
+    "next-auth": "^4.22.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "styled-components": "^5.3.3",
+    "viem": "^0.3.24",
+    "wagmi": "^1.0.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "babel-plugin-styled-components": "^2.0.2",
+    "eslint": "8.8.0",
+    "eslint-config-next": "12.0.9",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.2"
+  }
+}
