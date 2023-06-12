@@ -174,8 +174,9 @@ const Hero = () => {
     return (
         <HeroEl>
             <Title>
-                <Heading>The Fastest Growing Tokenized Community of Web3 Enthusiasts on  <BscLink href="https://www.angelhack.com/">AngelHack &</BscLink></Heading>
-                <Sub>Earn ANGI Tokens for hunting for Bounties & Trade NFTs</Sub>
+                <Heading>The Fastest Growing Tokenized Community of Web3 Enthusiasts on  <BscLink href="https://www.angelhack.com/">AngelHack </BscLink></Heading>
+                <Sub>Claim PAOPs from <BscLink href="https://www.angelhack.com/">AngelHack</BscLink> & Trade them as NFTs</Sub><br />
+                <Sub>Earn through Reactions on NFTs</Sub>
             </Title>
             <Slider>
                 <InfoContainer>

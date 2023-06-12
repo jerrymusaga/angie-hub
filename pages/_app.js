@@ -28,14 +28,6 @@ const wagmiConfig = createConfig({
 const ethereumClient = new EthereumClient(wagmiConfig, chains)
 
 
-// import * as dotenv from 'dotenv'
-// dotenv.config()
-
-
-
-
-
-
 const GlobalStyle = createGlobalStyle`
 
   html,
@@ -137,7 +129,7 @@ function MyApp({ Component, pageProps }) {
               
               <li>
                 <NavItem href="#">
-                  <Link href='/reactos-marketplace'>
+                  <Link href='/marketplace'>
                     MarketPlace
                   </Link>
                   </NavItem>
@@ -171,8 +163,6 @@ function MyApp({ Component, pageProps }) {
       </WagmiConfig>
       <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
       
-      
-   
     </>
   );
 }

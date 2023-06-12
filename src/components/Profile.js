@@ -9,7 +9,7 @@ import Tabs from "./styled/Tabs.styled";
 import Tab from "./styled/Tab.styled";
 import Button from "./styled/Button";
 
-import { getSession, signOut } from "next-auth/react";
+import Link from "next/link";
  
 
 const ProfileEl = styled.article`
@@ -130,21 +130,21 @@ const StatValue = styled.span`
 const AllTabs = [
     {
         Id: 1,
-        Title: "My Gallery",
+        Title: "POAPs",
         Content: (
             <Grid>
-                Minted NFTs
+                POAPS
             </Grid>
         )
     },
     {
         Id: 2,
-        Title: "My Minted Gallery",
+        Title: "Minted NFTs/PAOPs",
         Content: <Tab />
     },
     {
         Id: 3,
-        Title: "My Listed Gallery",
+        Title: "Listed NFTs/PAOPs",
         Content: <Tab />
     },
 ]
@@ -154,7 +154,7 @@ const Profile = ({username='@Favour'}) => {
     return (
         <ProfileEl>
             <Head>
-                <title>Reactos || {username}</title>
+                <title>AngieHub || {username}</title>
             </Head>
             <Cover>
                 <Image alt="profile" src="/images/cover/cover.png" layout="fill" />
@@ -170,12 +170,17 @@ const Profile = ({username='@Favour'}) => {
                         {`I love sports and music`}
                     </Bio>
                     <Social>
-                        <a href="#">
-                            <BsLinkedin />
-                        </a>
-                        <a href="#">
+                        <Link href="https://linkedIn.com">
+                            
+                             <BsLinkedin />
+                            
+                        </Link>
+                        <Link href="https://twitter.com">
+                           
                             <BsTwitter />
-                        </a>
+                            
+                        </Link>
+                        
                     </Social>
                     <Stats>
                         <StatItem>
@@ -199,7 +204,6 @@ const Profile = ({username='@Favour'}) => {
                 {/* TABS */}
                 <Tabs data={AllTabs} mt="2rem" />
             </Content>
-            <Button onClick={() => signOut({ redirect: "/" })}>Sign out</Button>
         </ProfileEl>
     )
 }

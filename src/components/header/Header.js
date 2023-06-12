@@ -122,7 +122,7 @@ const Header = ({mobileMenu}) => {
                         
                         <li>
                             <NavItem >
-                                <Link href="/reactos-marketplace">
+                                <Link href="/marketplace">
                                     Marketplace
                                 </Link>
                             </NavItem>
@@ -150,7 +150,7 @@ const Header = ({mobileMenu}) => {
             <UploadBtn>
                 <Button>
                     <Link href='/upload_nft'>
-                        Create NFT
+                        Upload NFT
                     </Link>
                 </Button>
             </UploadBtn>
