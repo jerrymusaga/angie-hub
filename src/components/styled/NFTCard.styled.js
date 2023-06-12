@@ -133,7 +133,7 @@ const NFTCard = ({nfts, react}) => {
                     <PriceSection>{price}</PriceSection>
                     <BottomSection>
                         <AvatarEl>
-                            <Image src={Avatar} width='50' height='50' />
+                            <Image alt="avatar" src={Avatar} width='50' height='50' />
                         </AvatarEl>
                         <OwnerEl>{Owner}</OwnerEl>
                         <ReactionEl>

@@ -183,13 +183,13 @@ const Asset = () => {
         <SectionContainer>
             <LeftSection>
                 <ImageEl>
-                    <Image src="/images/avatar/avatar.jpg" layout="responsive" width="1000px" height="1000px" />
+                    <Image alt="asset_file" src="/images/avatar/avatar.jpg" layout="responsive" width="1000px" height="1000px" />
                 </ImageEl>
                 <ChainLink>AngieHub chain details <HiOutlineExternalLink /> </ChainLink>
             </LeftSection>
             <RightSection>
                 <BackBtn>
-                    <Link href="/">
+                    <Link passHref href="/">
                         <AiFillCaretLeft /> Back
                     </Link>
                     
@@ -210,7 +210,7 @@ const Asset = () => {
                 </TopBtns>
                 <AuthorContainer>
                     <AvatarEl>
-                        <Image src="/images/avatar/avatar2.png"  width="50" height="50" />
+                        <Image alt="avatar" src="/images/avatar/avatar2.png"  width="50" height="50" />
                     </AvatarEl>
                     <span>
                         <CreatorLabel>

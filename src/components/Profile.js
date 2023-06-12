@@ -170,12 +170,12 @@ const Profile = ({username='@Favour'}) => {
                         {`I love sports and music`}
                     </Bio>
                     <Social>
-                        <Link href="https://linkedIn.com">
+                        <Link passHref href="https://linkedIn.com">
                             
                              <BsLinkedin />
                             
                         </Link>
-                        <Link href="https://twitter.com">
+                        <Link passHref href="https://twitter.com">
                            
                             <BsTwitter />
                             

@@ -213,8 +213,8 @@ const TopReactants = ({nfts, react}) => {
                     Reactants.map((nfts, i) => {
                         return (
                             
-                                <a>
-                                    <NFTCard key={nfts.Id} nfts= {nfts} react={react}  />
+                                <a key={nfts.Id}>
+                                    <NFTCard nfts= {nfts} react={react}  />
                                 </a>
                            
                            

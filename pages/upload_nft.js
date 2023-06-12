@@ -1,11 +1,10 @@
 import { useState } from 'react'
 import styled from 'styled-components'
-import { ethers } from 'ethers'
 
 import { useRouter } from 'next/router'
 import Button from '../src/components/styled/Button';
 import { Colors } from '../src/components/Theme';
-import { Web3Modal, Web3Button } from '@web3modal/react'
+import { Web3Button } from '@web3modal/react'
 import { useAccount} from 'wagmi'
 import Image from 'next/image';
 
@@ -72,7 +71,7 @@ export default function CreateItem() {
         />
         {
           fileUrl && (
-            <Image className="rounded mt-4" width="350" src={fileUrl} />
+            <Image alt="image_file" className="rounded mt-4" width="350" src={fileUrl} />
           )
         }
         {
