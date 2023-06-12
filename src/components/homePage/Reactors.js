@@ -143,7 +143,7 @@ const Reactors = ({ItemContainerRef, setscrollIndicator}) => {
                            <a>
                                 <Item>
                                     <Avatar>
-                                        <Image src={r.avatar} height="250" width="250" />
+                                        <Image alt="reactor" src={r.avatar} height="250" width="250" />
                                     </Avatar>
                                     <Name>{r.name}</Name>
                                     <BottomSection>

@@ -44,7 +44,7 @@ const OwnershipItem = () => {
     return (
         <OwnershipEl>
             <AvatarEl>
-                <Image src="/images/avatar/avatar3.png" width="45px" height="45px" />
+                <Image alt="owner" src="/images/avatar/avatar3.png" width="45px" height="45px" />
             </AvatarEl>
             <Info>
                 <OwnerEl>

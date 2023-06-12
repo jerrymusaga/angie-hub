@@ -10,6 +10,7 @@ import Tabs from "./styled/Tabs.styled";
 import Head from "next/head";
 import OwnershipItem from "./asset/OwnershipItem";
 import Buy from "./asset/Buy";
+import Link from "next/link";
 
 
 
@@ -184,11 +185,14 @@ const Asset = () => {
                 <ImageEl>
                     <Image src="/images/avatar/avatar.jpg" layout="responsive" width="1000px" height="1000px" />
                 </ImageEl>
-                <ChainLink>Reactos.com chain details <HiOutlineExternalLink /> </ChainLink>
+                <ChainLink>AngieHub chain details <HiOutlineExternalLink /> </ChainLink>
             </LeftSection>
             <RightSection>
                 <BackBtn>
-                    <AiFillCaretLeft /> Back
+                    <Link href="/">
+                        <AiFillCaretLeft /> Back
+                    </Link>
+                    
                 </BackBtn>
                 <TopBtns>
                     <ReactionBtn>

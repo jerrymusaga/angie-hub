@@ -118,7 +118,7 @@ const NFTCard = ({nfts, react}) => {
             <Card>
                 {/* <BadgeEl>{Views}</BadgeEl> */}
                 <ItemImage>
-                    <Image src={ImageURL} width="500" height="501" />
+                    <Image alt="img" src={ImageURL} width="500" height="501" />
                 </ItemImage>
                 <InfoSection>
                     <TSection>

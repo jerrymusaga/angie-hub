@@ -3,8 +3,6 @@ import Image from "next/image";
 import Button from "../styled/Button";
 import { Colors, Devices } from "../Theme";
 import { ethers } from "ethers";
-import {reactosNFTAddress} from '../../../config';
-import ReactosMarketplaceContract from '../../../../reactos-contract/artifacts/contracts/ReactosMarketplace.sol/ReactosNFTMarketplace.json'
 
 const BuyEl = styled.article`
     box-shadow: 0 4px 40px rgb(0 0 0 /10%);
@@ -68,25 +66,11 @@ const TextEl = styled.span`
 
 const Buy = () => {
 
-    const buyNFT = async (nft) => {
-        const web3modal = new Web3Modal();
-        const connection = await web3modal.connect();
-        const provider = new ethers.providers.Web3Provider(connection);
-        const signer = provider.getSigner();
-        const contract = new ethers.Contract(reactosNFTAddress, ReactosMarketplaceContract.abi, signer);
-
-        const price = ethers.utils.parseUnits(nft.price.toString(), 'ether');
-        const transaction = await contract.createMarketSale(nft.tokenId, {
-            value: price
-        })
-        await transaction.wait()
-    }
-
     return (
         <BuyEl>
             <LeftSection>
                 <ThumbsEl>
-                    <Image src="/images/avatar/avatar.jpg" width="80px" height="80px" />
+                    <Image alt="buy" src="/images/avatar/avatar.jpg" width="80px" height="80px" />
                 </ThumbsEl>
                 <Info>
                     <EditionEl>0.5 BnB</EditionEl>

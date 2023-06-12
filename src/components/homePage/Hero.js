@@ -227,7 +227,7 @@ const Hero = () => {
                 </Lines>
                 <ImgContainer>
                     <Img>
-                        <Image width="1440" height="810" layout="responsive" src={currentSlide.ImageSRC} />
+                        <Image alt="hero" width="1440" height="810" layout="responsive" src={currentSlide.ImageSRC} />
                     </Img>
                 </ImgContainer>
             </Slider>

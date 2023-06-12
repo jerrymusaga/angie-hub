@@ -157,12 +157,12 @@ const Profile = ({username='@Favour'}) => {
                 <title>Reactos || {username}</title>
             </Head>
             <Cover>
-                <Image src="/images/cover/cover.png" layout="fill" />
+                <Image alt="profile" src="/images/cover/cover.png" layout="fill" />
             </Cover>
             <Content>
                 <Info>
                     <Avatar >
-                        <Image src="/images/avatar/avatar8.png" layout="fill" />
+                        <Image alt="profile_image" src="/images/avatar/avatar8.png" layout="fill" />
                     </Avatar>
                     <Name>Favor Theo</Name>
                     <Username>@Favor</Username>
@@ -202,23 +202,6 @@ const Profile = ({username='@Favour'}) => {
             <Button onClick={() => signOut({ redirect: "/" })}>Sign out</Button>
         </ProfileEl>
     )
-}
-
-export async function getServerSideProps(context) {
-    const session = await getSession(context);
-  
-    // redirect if not authenticated
-    if (!session) {
-      return {
-        redirect: {
-          destination: "/",
-          permanent: false,
-        },
-      };
-    }
-    return {
-        props: {user: session.user}
-    }
 }
 
 export default Profile;

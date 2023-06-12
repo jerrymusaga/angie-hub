@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import axios from 'axios';
 import TopReactants from "../src/components/homePage/Reactants";
 
-import {reactosNFTAddress, reactosTokenAddress} from "../config";
 import { ethers } from "ethers";
 
 const NoItems = styled.h1`
