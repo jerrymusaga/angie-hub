@@ -12,6 +12,7 @@ import Image from 'next/image';
 const FormEl = styled.form`
     width: 100%;
     background-color: ${Colors.White};
+    
 `;
 
 
@@ -21,6 +22,7 @@ export default function CreateItem() {
   const router = useRouter()
   const {isConnected} = useAccount()
 
+  //an attempt to push to IPFS
   async function onChange(e) {
     const file = e.target.files[0]
     try {
@@ -38,7 +40,7 @@ export default function CreateItem() {
   }
 
   async function listNFTForSale() {
-    router.push('/reactos-marketplace')
+    router.push('/marketplace')
   }
 
   return (

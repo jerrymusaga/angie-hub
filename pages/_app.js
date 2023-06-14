@@ -15,6 +15,7 @@ import { Web3Modal } from '@web3modal/react'
 import { configureChains, createConfig, WagmiConfig } from 'wagmi'
 import { bscTestnet, mainnet, bsc} from 'wagmi/chains'
 import { Web3Button } from '@web3modal/react'
+import Footer from "../src/components/Footer";
 
 const chains = [bscTestnet, mainnet, bsc]
 const projectId = '7235d1bda94622aeca866d5ada9263ba'
@@ -158,7 +159,7 @@ function MyApp({ Component, pageProps }) {
           </MobileMenu>
           <Component {...pageProps} />
         </Page>
-        {/* footer */}
+        <Footer />
       </Main>
       </WagmiConfig>
       <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />

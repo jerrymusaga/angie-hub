@@ -148,6 +148,7 @@ const TopReactantsEl = styled.article`
     gap: 1rem;
     align-items: center;
     padding: 1rem;
+    color: ${Colors.White}
 
     @media ${Devices.Tablet}{
         padding: 1rem 3rem;

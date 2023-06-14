@@ -1,9 +1,6 @@
 import Head from "next/head";
 import styled from "styled-components";
-import { Colors, Devices } from "./Theme";
-import { BsGithub, BsGlobe } from "react-icons/bs";
-import Link from "next/link";
-import Button from "./styled/Button";
+import { Colors } from "./Theme";
 import Hero from "./homePage/Hero";
 import NewsLetter from "./homePage/NewsLetter";
 import Carousel from "./homePage/Carousel";
@@ -21,7 +18,7 @@ export default function Home() {
     
     <HomeEl>
       <Head>
-        <title>AngieHub || Tokenized community for bounty hunt</title>
+        <title>AngieHub || Tokenized community for talented individuals</title>
         <meta
           name="description"
           content="Community of angel hack bounty hunters"
@@ -30,7 +27,7 @@ export default function Home() {
       </Head>
       <Hero />
       <Carousel />
-      
+      <NewsLetter />
     </HomeEl>
   );
 }

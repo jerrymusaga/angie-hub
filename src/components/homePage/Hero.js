@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Colors, Devices } from "../Theme";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Button from "../styled/Button";
 
 

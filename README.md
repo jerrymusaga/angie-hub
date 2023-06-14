@@ -1,10 +1,7 @@
-# Cleaned (kinda) npx-create-next-app including styled-components and react icons
+# AngieHub - Tokenized community of Web3 Enthusiasts
 
-This is the npx-create-next-app's output with some files removed and `react-icons`, `styled-component` included.
+This is a platform where web3 enthusiasts from AngelHack community can claim their POAPs after participating in hacks and hunting for bounties. The community users can mint their POAPs as NFTs and they can as well upload any NFTs into the platform after connecting their wallets using web3 modal, either with MetaMask, Coinbase or any wallet extension supported by Web3Modal. Users can trade their NFTs after those NFTs are been minted and listed onto the platform. Users can as well earn from other users whenever there is a reaction on their NFT. There will be a transfer of tokens to the owner of the NFT.
 
-There is a `GlobalStyle` defined and used in `pages/_app.js` which you can use to apply your global styles using styled-components.
-
-Also there is a `Theme.js` file which you could use to define colors, breakpoints and use them across the project
 
 1.`npm install`
 
