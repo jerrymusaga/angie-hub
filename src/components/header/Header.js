@@ -110,11 +110,9 @@ const Header = ({mobileMenu}) => {
                 }
             </MenuIcon>
             <Center>
-                <Logo src=""/>
+                <Logo/>
                 <Link href='/'>
-                    <a>
-                        <LogoText>AngieHub</LogoText>
-                    </a>
+                        <LogoText>AngieHub</LogoText>   
                 </Link>
                 <SearchBar />
                 <Nav>
@@ -127,13 +125,7 @@ const Header = ({mobileMenu}) => {
                                 </Link>
                             </NavItem>
                         </li>
-                        <li>
-                            <NavItem >
-                                <Link href="/token">
-                                    Token
-                                </Link>
-                            </NavItem>
-                        </li>
+                        
                         <li>
                             <Web3Button />
                         </li>

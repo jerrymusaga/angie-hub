@@ -12,7 +12,7 @@ import Image from 'next/image';
 const FormEl = styled.form`
     width: 100%;
     background-color: ${Colors.White};
-    
+   
 `;
 
 

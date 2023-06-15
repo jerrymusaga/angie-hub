@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Image from "next/image";
 import Button from "../styled/Button";
 import { Colors, Devices } from "../Theme";
-import { ethers } from "ethers";
+
 
 const BuyEl = styled.article`
     box-shadow: 0 4px 40px rgb(0 0 0 /10%);
@@ -70,11 +70,11 @@ const Buy = () => {
         <BuyEl>
             <LeftSection>
                 <ThumbsEl>
-                    <Image alt="buy" src="/images/avatar/avatar.jpg" width="80px" height="80px" />
+                    <Image alt="buy" src="/images/avatar/avatar_1.jpg" width="80px" height="80px" />
                 </ThumbsEl>
                 <Info>
                     <EditionEl>0.5 BnB</EditionEl>
-                    <Title>Favourite NFT</Title>
+                    <Title>BitRefill Claire</Title>
                 </Info>
             </LeftSection>
             <RightSection>

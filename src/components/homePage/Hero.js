@@ -147,21 +147,21 @@ const items = [
         Id: 1,
         Owner: "Explore",
         Image: "",
-        ImageSRC: "/images/slider/slide0.avif",
+        ImageSRC: "/images/slider/slider1.gif",
 
     },
     {
         Id: 2,
         Owner: "Explore",
         Image: "",
-        ImageSRC: "/images/slider/slide2.png",
+        ImageSRC: "/images/slider/slider2.png",
 
     },
     {
         Id: 3,
         Owner: "Explore",
         Image: "",
-        ImageSRC: "/images/slider/slide3.png",
+        ImageSRC: "/images/slider/slider3.png",
 
     },
 ]
@@ -175,8 +175,8 @@ const Hero = () => {
         <HeroEl>
             <Title>
                 <Heading>The Fastest Growing Tokenized Community of Web3 Enthusiasts on  <BscLink href="https://www.angelhack.com/">AngelHack </BscLink></Heading>
-                <Sub>Claim PAOPs from <BscLink href="https://www.angelhack.com/">AngelHack</BscLink> & Trade them as NFTs</Sub><br />
-                <Sub>Earn through Reactions on NFTs</Sub>
+                <Sub>Showcase Your PAOPs</Sub><br />
+                <Sub>Upload NFTs, Trade & Earn through Reactions on NFTs</Sub>
             </Title>
             <Slider>
                 <InfoContainer>
@@ -196,12 +196,12 @@ const Hero = () => {
                         />
                         <div>
                             
-                            <Link passHref href="/profile">
-                                <a>
+                            <Link passHref href="/marketplace">
+                               
                                     <Owner>
                                         <Button>{currentSlide.Owner }</Button>
                                     </Owner>
-                                </a>    
+                                   
                             </Link>
                         </div>
                         <BsChevronRight 
@@ -228,7 +228,7 @@ const Hero = () => {
                 </Lines>
                 <ImgContainer>
                     <Img>
-                        <Image alt="hero" width="1440" height="810" layout="responsive" src={currentSlide.ImageSRC} />
+                        <Image alt="hero" width="1440" height="710" layout="responsive" src={currentSlide.ImageSRC} />
                     </Img>
                 </ImgContainer>
             </Slider>

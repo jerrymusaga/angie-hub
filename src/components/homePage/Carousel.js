@@ -61,8 +61,8 @@ const Carousel = () => {
     const [scrollIndicator, setscrollIndicator] = useState('b');
     return (
         <CarouselEl>
-            <Button>Top Reactors</Button>
-            <Title>Profile</Title>
+            <Button>Top Profiles</Button>
+            <Title>Avatars</Title>
             <Controls>
                 <ControlBtn 
                     active={scrollIndicator === 'm' || scrollIndicator === 'e'}

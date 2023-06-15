@@ -10,135 +10,76 @@ const Reactants = [
     {
         Id: 1,
         Views: "Views: 1.7k",
-        ImageURL: "/images/avatar/avatar.jpg",
+        ImageURL: "/images/nft/nft1.gif",
         Edition: 1,
         Stock: 1,
-        Title: "Favorite NFT",
+        Title: "BitRefill Claire",
         Price: "0.7 BnB",
-        Avatar: "/images/avatar/avatar1.png",
-        Owner: "0x122851EB3915cc769dECBf95a566e7fC8aAc2125".slice(0,7),
-        Reactions: "1.1k",
+        Avatar: "/images/avatar/avatar_1.jpg",
+        Owner: "0x122851EB3915cc769dECBf95a566e7fC8aAc2125".slice(0,7) ,
+        Reactions: "55",
     },
     {
         Id: 2,
         Views: "Views: 1.7k",
-        ImageURL: "/images/avatar/new.jpg",
+        ImageURL: "/images/nft/nft2.png",
         Edition: 23,
         Stock: 12,
-        Title: "Newest NFT",
+        Title: "The FangOut",
         Price: "0.7 BnB",
-        Avatar: "/images/avatar/avatar1.png",
+        Avatar: "/images/avatar/avatar_2.avif",
         Owner: "0xe9794AEd70Bbf4B068f1EDBfefF8fBe820D20021".slice(0,7),
-        Reactions: "1.1k",
+        Reactions: "25",
     },
     {
         Id: 3,
         Views: "Views: 1.7k",
-        ImageURL: "/images/avatar/avatar5.png",
+        ImageURL: "/images/nft/nft3.gif",
         Edition: 23,
         Stock: 12,
-        Title: "Greatest NFT",
+        Title: "M.O.K Art",
         Price: "0.7 BnB",
-        Avatar: "/images/avatar/avatar1.png",
+        Avatar: "/images/avatar/avatar_3.avif",
         Owner: "0xcD8AA0D5C1459BF71cc2d03f6E3C394831630CCC".slice(0,7),
-        Reactions: "1.1k",
+        Reactions: "10",
     },
     {
         Id: 4,
         Views: "Views: 1.7k",
-        ImageURL: "/images/avatar/avatar1.png",
+        ImageURL: "/images/nft/nft4.png",
         Edition: 23,
         Stock: 12,
-        Title: "Favorite Avatar",
+        Title: "Tearing Spaces",
         Price: "0.7 BnB",
-        Avatar: "/images/avatar/avatar1.png",
-        Owner: "eunice.eth",
-        Reactions: "1.1k",
+        Avatar: "/images/avatar/avatar_4.avif",
+        Owner: "eunice",
+        Reactions: "4",
     },
     {
         Id: 5,
         Views: "Views: 1.7k",
-        ImageURL: "/images/avatar/avatar3.png",
+        ImageURL: "/images/nft/nft5.gif",
         Edition: 23,
         Stock: 12,
-        Title: "Favorite Avatar",
+        Title: "Boiler Room",
         Price: "0.7 BnB",
-        Avatar: "/images/avatar/avatar1.png",
-        Owner: "eunice.eth",
-        Reactions: "1.1k",
+        Avatar: "/images/avatar/avatar_5.avif",
+        Owner: "eunice",
+        Reactions: "11",
     },
     {
         Id: 6,
         Views: "Views: 1.7k",
-        ImageURL: "/images/avatar/avatar3.png",
+        ImageURL: "/images/nft/nft6.png",
         Edition: 23,
         Stock: 12,
-        Title: "Favorite Avatar",
+        Title: "Kairos",
         Price: "0.7 BnB",
-        Avatar: "/images/avatar/avatar1.png",
-        Owner: "eunice.eth",
-        Reactions: "1.1k",
+        Avatar: "/images/avatar/avatar_6.avif",
+        Owner: "eunice",
+        Reactions: "23",
     },
-    {
-        Id: 7,
-        Views: "Views: 1.7k",
-        ImageURL: "/images/avatar/avatar3.png",
-        Edition: 23,
-        Stock: 12,
-        Title: "Favorite Avatar",
-        Price: "0.7 BnB",
-        Avatar: "/images/avatar/avatar1.png",
-        Owner: "eunice.eth",
-        Reactions: "1.1k",
-    },
-    {
-        Id: 8,
-        Views: "Views: 1.7k",
-        ImageURL: "/images/avatar/avatar3.png",
-        Edition: 23,
-        Stock: 12,
-        Title: "Favorite Avatar",
-        Price: "0.7 BnB",
-        Avatar: "/images/avatar/avatar1.png",
-        Owner: "eunice.eth",
-        Reactions: "1.1k",
-    },
-    {
-        Id: 9,
-        Views: "Views: 1.7k",
-        ImageURL: "/images/avatar/avatar3.png",
-        Edition: 23,
-        Stock: 12,
-        Title: "Favorite Avatar",
-        Price: "0.7 BnB",
-        Avatar: "/images/avatar/avatar1.png",
-        Owner: "eunice.eth",
-        Reactions: "1.1k",
-    },
-    {
-        Id: 10,
-        Views: "Views: 1.7k",
-        ImageURL: "/images/avatar/avatar3.png",
-        Edition: 23,
-        Stock: 12,
-        Title: "Favorite Avatar",
-        Price: "0.7 BnB",
-        Avatar: "/images/avatar/avatar1.png",
-        Owner: "eunice.eth",
-        Reactions: "1.1k",
-    },
-    {
-        Id: 11,
-        Views: "Views: 1.7k",
-        ImageURL: "/images/avatar/avatar3.png",
-        Edition: 23,
-        Stock: 12,
-        Title: "Favorite Avatar",
-        Price: "0.7 BnB",
-        Avatar: "/images/avatar/avatar1.png",
-        Owner: "eunice.eth",
-        Reactions: "1.1k",
-    },
+    
 ]
 
 
@@ -166,6 +107,7 @@ const TopReactantsEl = styled.article`
 const Title = styled.h1`
     font-size: 2.5rem;
     font-weight: 400;
+    color: ${Colors.White}
 
 `;
 const TopSection = styled.div`
@@ -204,21 +146,15 @@ const ShowMore = styled.div`
 const TopReactants = ({nfts, react}) => {
     return (
         <TopReactantsEl>
-            <Title>Top Gallery</Title>
-            <TopSection>
-                <Sort>Category</Sort>
-                <Date>Today</Date>
-            </TopSection>
+            <Title>Display of POAP & NFTs</Title>
+            
             <Grid>
                 {
                     Reactants.map((nfts, i) => {
                         return (
-                            
                                 <a key={nfts.Id}>
                                     <NFTCard nfts= {nfts} react={react}  />
-                                </a>
-                           
-                           
+                                </a>   
                         )
                     })
 

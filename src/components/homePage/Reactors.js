@@ -75,50 +75,50 @@ const BottomSection = styled.div`
 const ReactorsList = [
     {
         id: 1,
-        name: "rivo.eth",
-        avatar: "/images/avatar/avatar1.png",
+        name: "jackie",
+        avatar: "/images/avatar/avatar_1.jpg",
         total_reaction_cost: 5,
     },
     {
         id: 2,
-        name: "janet.eth",
-        avatar: "/images/avatar/avatar2.png",
+        name: "janet",
+        avatar: "/images/avatar/avatar_2.avif",
         total_reaction_cost: 15,
     },
     {
         id: 3,
-        name: "angel.eth",
-        avatar: "/images/avatar/avatar3.png",
+        name: "angel",
+        avatar: "/images/avatar/avatar_3.avif",
         total_reaction_cost: 52,
     },
     {
         id: 4,
-        name: "mary.eth",
-        avatar: "/images/avatar/avatar4.png",
+        name: "mary",
+        avatar: "/images/avatar/avatar_4.avif",
         total_reaction_cost: 22,
     },
     {
         id: 5,
-        name: "praise.eth",
-        avatar: "/images/avatar/avatar5.png",
+        name: "praise",
+        avatar: "/images/avatar/avatar_5.avif",
         total_reaction_cost: 5,
     },
     {
         id: 6,
-        name: "benita.eth",
-        avatar: "/images/avatar/avatar6.png",
+        name: "benita",
+        avatar: "/images/avatar/avatar_6.avif",
         total_reaction_cost: 5.55,
     },
     {
         id: 7,
-        name: "james.eth",
-        avatar: "/images/avatar/avatar7.jpg",
+        name: "james",
+        avatar: "/images/avatar/avatar_7.avif",
         total_reaction_cost: 11.4,
     },
     {
         id: 8,
-        name: "love.eth",
-        avatar: "/images/avatar/avatar8.png",
+        name: "love",
+        avatar: "/images/avatar/avatar_8.avif",
         total_reaction_cost: 111,
     },
 ]
@@ -140,7 +140,7 @@ const Reactors = ({ItemContainerRef, setscrollIndicator}) => {
                 reactors.map((r) => {
                     return (
                         <Link key={r.id} href="profile" passHref>
-                           <a>
+                           
                                 <Item>
                                     <Avatar>
                                         <Image alt="reactor" src={r.avatar} height="250" width="250" />
@@ -151,7 +151,7 @@ const Reactors = ({ItemContainerRef, setscrollIndicator}) => {
                                         <Amount>{r.total_reaction_cost} BnB</Amount>
                                     </BottomSection>
                                 </Item>
-                            </a>
+                            
                         </Link>
                     )
                 })

@@ -47,7 +47,7 @@ const SearchBar = () => {
         <SearchBarEl>
             <SearchBarBg>
                 <CgSearch />
-                <SearchInput placeholder="Search Users & Most Reacted Photos" />
+                <SearchInput placeholder="Search Users & Most Reacted NFT/POAP" />
             </SearchBarBg>
         </SearchBarEl>
     ) 

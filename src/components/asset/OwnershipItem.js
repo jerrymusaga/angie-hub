@@ -7,6 +7,7 @@ const OwnershipEl = styled.article`
     display: flex;
     gap: 0.5rem;
     align-items: center;
+    background-color: ${Colors.Background}
 
 `;
 const AvatarEl = styled.span`
@@ -44,15 +45,15 @@ const OwnershipItem = () => {
     return (
         <OwnershipEl>
             <AvatarEl>
-                <Image alt="owner" src="/images/avatar/avatar3.png" width="45px" height="45px" />
+                <Image alt="owner" src="/images/avatar/avatar_1.jpg" width="45px" height="45px" />
             </AvatarEl>
             <Info>
                 <OwnerEl>
                     Owner
                 </OwnerEl>
-                <UsernameEl>@favour</UsernameEl>
+                <UsernameEl>@jackie</UsernameEl>
             </Info>
-            <AddressEl>0x232238g88fkl... <MdOutlineContentCopy /></AddressEl>
+            <AddressEl>0x232238g88fkl...34334djff7738233335g8 </AddressEl><MdOutlineContentCopy />
         </OwnershipEl>
     )
 }

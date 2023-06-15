@@ -16,8 +16,8 @@ import Link from "next/link";
 
 
 const AssetEl = styled.article`
-    background-color: ${Colors.White};
-    color: ${Colors.Black};
+    background-color: ${Colors.Background};
+    color: ${Colors.White};
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -183,16 +183,15 @@ const Asset = () => {
         <SectionContainer>
             <LeftSection>
                 <ImageEl>
-                    <Image alt="asset_file" src="/images/avatar/avatar.jpg" layout="responsive" width="1000px" height="1000px" />
+                    <Image src="/images/nft/nft1.gif" layout="responsive" width="1000px" height="1000px" />
                 </ImageEl>
-                <ChainLink>AngieHub chain details <HiOutlineExternalLink /> </ChainLink>
+                <ChainLink>AngieHub chain <HiOutlineExternalLink /> </ChainLink>
             </LeftSection>
             <RightSection>
                 <BackBtn>
-                    <Link passHref href="/">
-                        <AiFillCaretLeft /> Back
+                    <Link href="/marketplace">
+                    <AiFillCaretLeft /> 
                     </Link>
-                    
                 </BackBtn>
                 <TopBtns>
                     <ReactionBtn>
@@ -210,21 +209,21 @@ const Asset = () => {
                 </TopBtns>
                 <AuthorContainer>
                     <AvatarEl>
-                        <Image alt="avatar" src="/images/avatar/avatar2.png"  width="50" height="50" />
+                        <Image src="/images/avatar/avatar_1.jpg"  width="50" height="50" />
                     </AvatarEl>
                     <span>
                         <CreatorLabel>
                             Creator 
                         </CreatorLabel>
-                        <UsernameEl>@favour</UsernameEl>
+                        <UsernameEl>@jackie</UsernameEl>
                     </span>
                 </AuthorContainer>
                 <EditionEl>
-                   1 Copy Minted
+                   1 Copy Uploaded
                 </EditionEl>
                 <span>
-                    <Title>Favorite NFT</Title>
-                    <MarketPlace>Reactos MarketPlace</MarketPlace>
+                    <Title>BitRefill Claire</Title>
+                    <MarketPlace>AngieHub</MarketPlace>
                 </span>
                 <AcOfferLabel>
                     Accepting Offers
@@ -234,6 +233,7 @@ const Asset = () => {
                 </Description>
                 <TagContainer>
                     <Tag>nft</Tag>
+                    <Tag>paop</Tag>
                 </TagContainer>
                 <Tabs mt='1rem' data={AllTabs}></Tabs>
             </RightSection>

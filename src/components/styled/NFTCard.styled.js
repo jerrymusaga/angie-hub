@@ -3,6 +3,7 @@ import { Colors } from "../Theme";
 import Image from "next/image";
 import { BsHeart } from "react-icons/bs";
 import Link from "next/link";
+import {MdOutlineContentCopy} from 'react-icons/md';
 
 const NFTCardEl = styled.article`
     position: relative;
@@ -126,16 +127,16 @@ const NFTCard = ({nfts, react}) => {
                         <StockEl>{Stock} {Stock <= 1 ? "Copy for Sale" : "Copies for Sale"}</StockEl> */}
                     </TSection>
                     <ItemTitle>
-                        <Link href='/asset'>
+                    <Link href="/asset">
                         {Title}
-                        </Link>
+                    </Link>    
                     </ItemTitle>
                     <PriceSection>{price}</PriceSection>
                     <BottomSection>
                         <AvatarEl>
                             <Image alt="avatar" src={Avatar} width='50' height='50' />
                         </AvatarEl>
-                        <OwnerEl>{Owner}</OwnerEl>
+                        <OwnerEl>{Owner} </OwnerEl><span><MdOutlineContentCopy /></span>
                         <ReactionEl>
                             <BsHeart onClick={()=>react} /> 0
                         </ReactionEl>

@@ -8,6 +8,7 @@ import Head from "next/head";
 import Tabs from "./styled/Tabs.styled";
 import Tab from "./styled/Tab.styled";
 import Button from "./styled/Button";
+import OwnershipItem from "./asset/OwnershipItem";
 
 import Link from "next/link";
  
@@ -133,41 +134,41 @@ const AllTabs = [
         Title: "POAPs",
         Content: (
             <Grid>
-                POAPS
+                <OwnershipItem />
             </Grid>
         )
     },
     {
         Id: 2,
-        Title: "Minted NFTs/PAOPs",
+        Title: "Uploaded NFTs/PAOPs",
         Content: <Tab />
     },
     {
         Id: 3,
-        Title: "Listed NFTs/PAOPs",
+        Title: "Listed NFTs",
         Content: <Tab />
     },
 ]
 
 
-const Profile = ({username='@Favour'}) => {
+const Profile = ({username='@jackie'}) => {
     return (
         <ProfileEl>
             <Head>
                 <title>AngieHub || {username}</title>
             </Head>
             <Cover>
-                <Image alt="profile" src="/images/cover/cover.png" layout="fill" />
+                <Image alt="profile" src="/images/nft/nft6.png" width="1990px" height="1990px" />
             </Cover>
             <Content>
                 <Info>
                     <Avatar >
-                        <Image alt="profile_image" src="/images/avatar/avatar8.png" layout="fill" />
+                        <Image alt="profile_image" src="/images/avatar/avatar_1.jpg" layout="fill" />
                     </Avatar>
-                    <Name>Favor Theo</Name>
-                    <Username>@Favor</Username>
+                    <Name>Jackie AngelHack</Name>
+                    <Username>@jackie</Username>
                     <Bio>
-                        {`I love sports and music`}
+                        {`I love participating in web3 hackathons hosted on AngelHack`}
                     </Bio>
                     <Social>
                         <Link passHref href="https://linkedIn.com">
@@ -192,13 +193,10 @@ const Profile = ({username='@Favour'}) => {
                             <StatValue>15k</StatValue>
                         </StatItem>
                         <StatItem>
-                            <StatTitle>Minted</StatTitle>
-                            <StatValue>240</StatValue>
+                            <StatTitle>Uploaded</StatTitle>
+                            <StatValue>6</StatValue>
                         </StatItem>
-                        <StatItem>
-                            <StatTitle>Listed</StatTitle>
-                            <StatValue>205</StatValue>
-                        </StatItem>
+                        
                     </Stats>
                 </Info>
                 {/* TABS */}

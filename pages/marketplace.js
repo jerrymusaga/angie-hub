@@ -19,8 +19,7 @@ const Marketplace = () => {
 
     const reactToken = async () => {
         const provider = new ethers.providers.JsonRpcProvider("https://data-seed-prebsc-1-s1.binance.org:8545");
-        const amount = ethers.utils.parseEther(2000);
-        const data = await contract.transfer("0x122851EB3915cc769dECBf95a566e7fC8aAc2125", amount)
+      
         setReact(data)
     }
 

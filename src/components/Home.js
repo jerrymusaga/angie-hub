@@ -21,7 +21,7 @@ export default function Home() {
         <title>AngieHub || Tokenized community for talented individuals</title>
         <meta
           name="description"
-          content="Community of angel hack bounty hunters"
+          content="Community of angel hack web3 enthusiasts"
         />
         <link rel="icon" href="/favicon.png" />
       </Head>

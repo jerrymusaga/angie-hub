@@ -135,13 +135,7 @@ function MyApp({ Component, pageProps }) {
                   </Link>
                   </NavItem>
               </li>
-              <li>
-                <NavItem href="#">
-                  <Link href='/token'>
-                    Tokens
-                  </Link>
-                  </NavItem>
-              </li>
+              
               <li>
                 <Web3Button />
               </li>
