@@ -1,8 +1,11 @@
+> ##### Demo Link
+https://youtu.be/n3npLbu3bS8
+
 # AngieHub - Tokenized community of Web3 Enthusiasts
 This is a platform where web3 enthusiasts from AngelHack community can claim their POAPs after participating in hacks and hunting for bounties. The community users can upload their NFTs after connecting their wallets using web3 modal, either with MetaMask, Coinbase or any wallet extension supported by Web3Modal. Users can trade their NFTs after those NFTs are been uploaded and listed onto the platform. Users can as well earn from other users whenever there is a reaction on their NFT. There will be a transfer of tokens to the owner of the NFT.
 
 # Why 
-Decentralization and tokenization of asset is the future. So this project will help in showcasting your POAPs gotten from events which serves as memories. Users can aim through reactions on their NFTs, unlike the traditional social medias where you do not earn from reactions on photos. Users can trade NFTs as well in Angiehub
+Decentralization and tokenization of asset is the future. So this project will help in showcasting your POAPs gotten from events which serves as memories. Users can earn rewards through reactions on their NFTs, unlike the traditional social medias where you do not earn from reactions on photos. Users can trade NFTs as well in Angiehub
 
 # How to run project
 
