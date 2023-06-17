@@ -7,7 +7,7 @@ const OwnershipEl = styled.article`
     display: flex;
     gap: 0.5rem;
     align-items: center;
-    background-color: ${Colors.Background}
+    background-color: ${Colors.White}
 
 `;
 const AvatarEl = styled.span`

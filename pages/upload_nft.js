@@ -11,9 +11,18 @@ import Image from 'next/image';
 
 const FormEl = styled.form`
     width: 100%;
-    background-color: ${Colors.White};
+    background-color: ${Colors.Background};
+    
    
 `;
+
+const InnerForm = styled.div`
+  border: 1px solid ${Colors.White};
+  border-radius: 7px;
+  box-shadow: 3px 6px 5px 4px #888888;
+
+
+`
 
 
 export default function CreateItem() {
@@ -46,21 +55,21 @@ export default function CreateItem() {
   return (
     <FormEl className="flex justify-center ">
      
-      <div className="w-1/2 flex flex-col pb-12">
-      {/* <h6>Upload NFT and automatically List to Marketplace</h6> */}
+      <InnerForm className="w-1/2 flex flex-col pb-12 justify-center">
+      
         <input 
           placeholder="Name of NFT"
-          className="mt-8 border rounded p-4"
+          className="mt-8 border rounded p-4 w-70 ml-5 mr-5"
           onChange={e => updateFormInput({ ...formInput, name: e.target.value })}
         />
         <textarea
           placeholder="Description"
-          className="mt-2 border rounded p-4"
+          className="mt-2 border rounded p-4 w-70 ml-5 mr-5"
           onChange={e => updateFormInput({ ...formInput, description: e.target.value })}
         />
         <input
           placeholder="Price in BnB"
-          className="mt-2 border rounded p-4"
+          className="mt-2 border rounded p-4 w-70 ml-5 mr-5"
           
           
           onChange={e => updateFormInput({ ...formInput, price: e.target.value })}
@@ -68,7 +77,7 @@ export default function CreateItem() {
         <input
           type="file"
           name="nft-image"
-          className="my-4"
+          className="my-4 w-70 ml-5 mr-5"
           onChange={onChange}
         />
         {
@@ -77,12 +86,12 @@ export default function CreateItem() {
           )
         }
         {
-          isConnected ? <Button  onClick={listNFTForSale} className="font-bold mt-4 bg-pink-500 text-white rounded p-4 shadow-lg">
+          isConnected ? <Button  onClick={listNFTForSale} className="w-70 ml-5 mr-5 font-bold mt-4 bg-pink-500 text-white rounded p-4 shadow-lg">
           Upload NFT
-        </Button> : <Web3Button /> 
+        </Button> : <Web3Button  /> 
         }
         
-      </div>
+      </InnerForm>
     </FormEl>
   )
 }

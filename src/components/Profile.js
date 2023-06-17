@@ -11,6 +11,34 @@ import Button from "./styled/Button";
 import OwnershipItem from "./asset/OwnershipItem";
 
 import Link from "next/link";
+
+const Reactants = [
+    {
+        Id: 1,
+        Views: "Views: 1.7k",
+        ImageURL: "/images/nft/nft1.gif",
+        Edition: 1,
+        Stock: 1,
+        Title: "BitRefill Claire",
+        Price: "0.7 BnB",
+        Avatar: "/images/avatar/avatar_1.jpg",
+        Owner: "0x122851EB3915cc769dECBf95a566e7fC8aAc2125".slice(0,7) ,
+        Reactions: "55",
+    },
+    {
+        Id: 2,
+        Views: "Views: 1.7k",
+        ImageURL: "/images/nft/nft2.png",
+        Edition: 23,
+        Stock: 12,
+        Title: "The FangOut",
+        Price: "0.7 BnB",
+        Avatar: "/images/avatar/avatar_2.avif",
+        Owner: "0x122851EB3915cc769dECBf95a566e7fC8aAc2125".slice(0,7),
+        Reactions: "25",
+    },
+
+]
  
 
 const ProfileEl = styled.article`
@@ -134,7 +162,17 @@ const AllTabs = [
         Title: "POAPs",
         Content: (
             <Grid>
-                <OwnershipItem />
+                {
+                    Reactants.map((nfts, i) => {
+                        return (
+                                <a key={nfts.Id}>
+                                    <NFTCard nfts= {nfts}   />
+                                </a>   
+                        )
+                    })
+
+                                   
+                }
             </Grid>
         )
     },
